@@ -184,8 +184,9 @@ img {
 /* Hero section */
 
 .hero  {
-    background-image: url(/images/hero-image.jpg);
     height: 600px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.708), rgba(46, 47, 66, 0.70)), url(../images/hero-image.jpg);
+    background-position: center center;
     padding: 188px 0;
 }
 
@@ -195,7 +196,7 @@ img {
     align-items: center;
 }
 
-.hero-item {
+.hero-title {
     color: var(--white, #ffffff);
     text-align: center;
     font-family: "Roboto";
