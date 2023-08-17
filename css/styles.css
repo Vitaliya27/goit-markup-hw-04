@@ -406,6 +406,47 @@ img {
 
 /* Customers section */
 
+.customer {
+    width: 1128px;
+    height: 200px;
+    flex-shrink: 0;
+    margin: 120px auto;
+    padding: 0;
+}
+
+.customer-title {
+    color: var(--navyblue, #2E2F42);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.customers-icons-container {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate, #8E8F99);
+    padding: 16px 32px; 
+}
+
+.customers-icons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
 /* Portfolio Page */
 
 .portfolio {
