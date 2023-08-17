@@ -49,8 +49,9 @@ img {
 /* Header section */
 
 .header {
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
     background: var(--white, #FFF);
-    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -99,25 +100,38 @@ img {
     background-color: #FFFFFF;
     display: flex;
     gap: 40px;
-    margin: 24px 0 24px 0;
 }
 
-.list-item {
+.nav-link {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navyblue, #2e2f42);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     padding: 24px 0;
+
 }
 
-.list-item:hover {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
     color: #404bbf;
 }
 
-.list-item:focus {
-    color: #404bbf;
+.nav-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
 }
 
 .address .list {
@@ -135,12 +149,11 @@ img {
     color: var(--navyblue, #434455);
 }
 
-.address-item:hover {
-    color: #404bbf;
-}
-
+.address-item:hover,
 .address-item:focus {
     color: #404bbf;
+    display: block;
+    padding: 24px 0;
 }
 
 /* Footer */
@@ -185,7 +198,7 @@ img {
 
 .hero  {
     height: 600px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.708), rgba(46, 47, 66, 0.70)), url(../images/hero-image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
     background-position: center center;
     padding: 188px 0;
     background-color: var(--grey, rgba(46, 47, 66, 0.70));
