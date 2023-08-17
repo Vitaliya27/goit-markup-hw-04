@@ -184,8 +184,7 @@ img {
 /* Hero section */
 
 .hero  {
-    background: var(--navyblue, #2E2F42);
-    color: #ffffff;
+    background-image: url(/images/hero-image.jpg);
     height: 600px;
     padding: 188px 0;
 }
