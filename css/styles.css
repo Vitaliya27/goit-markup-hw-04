@@ -152,8 +152,7 @@ img {
 .address-item:hover,
 .address-item:focus {
     color: #404bbf;
-    display: block;
-    padding: 24px 0;
+    display: flex;
 }
 
 /* Footer */
@@ -197,6 +196,7 @@ img {
 /* Hero section */
 
 .hero  {
+    width: 1440px;
     height: 600px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
     background-position: center center;
@@ -465,11 +465,27 @@ img {
     gap: 24px;
 }
 
-.customers-icons {
+.customers-icons-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    cursor: pointer;
+    transition: border-color .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.customers-icons-container:hover {
+    border-color: var(--ocean, #404BBF);
+    --color1: #404BBF;
+}
+
+.customers-icons:hover {
+    
+}
+
+
 
 /* Portfolio Page */
 
