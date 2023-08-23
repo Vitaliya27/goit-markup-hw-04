@@ -486,6 +486,7 @@ img {
 .team-icons-container{
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-team-card {
@@ -507,7 +508,7 @@ img {
 }
 
 .social-links-icons {
-    fill: var(--navyblue, #f4f4f4);
+    fill: var(--white, #f4f4f4);
 }
 
 /* Customers section */
@@ -555,8 +556,8 @@ img {
 
 .customers-links:hover,
 .customers-links:focus {
+    color: #404bbf;
     border-color: #404bbf;
-    --color1: #404BBF;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .custoners-icons {
