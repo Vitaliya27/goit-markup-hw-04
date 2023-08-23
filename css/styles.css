@@ -227,6 +227,7 @@ img {
     width: 40px;
     height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .footer-icons-item:hover,
@@ -596,7 +597,8 @@ img {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid transparent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .buttons-item:hover,
 .buttons-item:focus {
@@ -666,6 +668,7 @@ p {
 
 .service .link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service .link:hover,
@@ -686,8 +689,9 @@ p {
     overflow: hidden;
 }
 
-.service-card-image:hover .overlay {
-    transform: translateX(0);
+.service-card-image:hover .overlay,
+.service-card-image:focus .overlay {
+    transform: translateY(0%);
 }
 
 .overlay {
