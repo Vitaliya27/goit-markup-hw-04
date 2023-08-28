@@ -267,6 +267,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0;
+    margin: 0 auto;
 }
 
 .hero .container {
@@ -533,7 +534,6 @@ img {
 
 .customers-list {
     display: flex;
-    flex-direction: row;
     gap: 24px;
 }
 
@@ -551,13 +551,13 @@ img {
     margin: 0;
     border-radius: 4px;
     border: 1px solid #8E8F99;
-    color: var(--navyblue, #8e8f99);
+    color: var(--primary-cl);
     cursor: pointer;
 }
 
 .customers-links:hover,
 .customers-links:focus {
-    color: #404bbf;
+    color: var(--accent-cl);
     border-color: #404bbf;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
@@ -608,6 +608,8 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Portfolio section */
+
 .service {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -621,12 +623,13 @@ img {
     display: block; 
 }
 
-.service-links:hover,
-.service-links:focus {
+.service-links:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Portfolio section */
+.service-links:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .row-title {
     font-weight: 500;
@@ -776,7 +779,10 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover,
+.modal-btn-icon:hover {
+    fill: #ffffff;
+}
+
 .modal-btn-icon:focus {
     fill: #ffffff;
 }
