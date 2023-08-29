@@ -561,10 +561,9 @@ img {
 .customers-links:focus {
     color: #404bbf;
     border-color: #404bbf;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.custoners-icons {
+.customers-icons {
     fill: currentColor;
 }
 
@@ -782,10 +781,7 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover {
-    fill: #ffffff;
-}
-
-.modal-btn-icon:focus {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
     fill: #ffffff;
 }
